@@ -1,5 +1,4 @@
 import { Component } from 'react/cjs/react.production.min';
-import PropTypes, { objectOf } from 'prop-types';
 import './App.css';
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
@@ -51,9 +50,5 @@ class App extends Component {
     );
   }
 }
-App.propTypes = {
-  filter: PropTypes.string,
-  contacts: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string.isRequired)),
-};
 
 export default App;
